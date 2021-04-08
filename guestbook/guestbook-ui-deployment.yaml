@@ -16,4 +16,4 @@ spec:
       - name: guestbook-ui
         image: nginx:1.14.2
         ports:
-        - containerPort: 81
+        - containerPort: 80
