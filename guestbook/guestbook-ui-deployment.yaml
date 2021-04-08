@@ -13,7 +13,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - name: nginx
+      - name: guestbook-ui
         image: nginx:1.14.2
         ports:
         - containerPort: 81
