@@ -18,7 +18,7 @@ subsets:
   -
     addresses:
       -
-        ip: "0.0.0.0"
+        ip: "1.1.1.1"
     ports:
       -
         port: 8081
