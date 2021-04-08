@@ -4,22 +4,9 @@ metadata:
   name: guestbook-ui
 spec:
   ports:
-  - name: "guestbook-ui"
-    port: 8081
+  - port: 8081
     targetPort: 80
-    nodePort: 0
-
----
-kind: "Endpoints"
-apiVersion: "v1"
-metadata:
-  name: "guestbook-ui"
-subsets:
-  -
-    addresses:
-      -
-        ip: "1.1.1.1"
-    ports:
-      -
-        port: 8081
-        name: "guestbook-ui"
+    nodePort: 8081
+  selector:
+    app: guestbook-ui
+  type: NodePort
